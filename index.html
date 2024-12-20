@@ -406,19 +406,15 @@
                     bar.style.backgroundColor = "#fff";
                 });
                 navLinks.forEach((link) => {
-                    link.style.color = "#fff";
+                    link.style.color = "";
                 })
             }
 
-            if (toggleMenu.checked && window.innerWidth > 769) {
+            if (toggleMenu.checked && window.innerWidth < 991) {
                 navLinks.forEach((link) => {
-                    link.style.color = "#695aa6"; 
+                    link.style.color = "#695aa6 !important"; 
                 });
-            } else {
-                navLinks.forEach((link) => {
-                    link.style.color = "";
-                });
-            }
+            } 
         })
     </script>
 </body>
